@@ -49,9 +49,9 @@ function renderizarUsuarios(usuarios) {
     return `
       <article class="card">
         <h3>${name}</h3>
-        <p>📧 ${email}</p>
-        <p>📞 ${phone.split(' ')[0]}</p>
-        <div class="tag">🏢 ${company.name}</div>
+        <p>${email}</p>
+        <p>${phone.split(' ')[0]}</p>
+        <div class="tag">${company.name}</div>
       </article>
     `;
   }).join('');
