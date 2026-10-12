@@ -42,10 +42,10 @@ async function obtenerDirectorio() {
  */
 function renderizarUsuarios(usuarios) {
   const htmlTarjetas = usuarios.map((usuario) => {
-    // ES6: Desestructuración para extraer solo lo que necesitamos
+    // ES6: Desestructuración
     const { name, email, phone, company } = usuario;
     
-    // ES6: Template Literals (comillas invertidas) para código limpio
+    // ES6: Template Literals
     return `
       <article class="card">
         <h3>${name}</h3>
